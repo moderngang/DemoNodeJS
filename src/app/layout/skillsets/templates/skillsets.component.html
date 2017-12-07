@@ -1,0 +1,25 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'Skillsets'" [icon]="'fa-briefcase'"></app-page-header>
+    <div class="box">
+        <accordion>
+            <accordion-group class="top-margin-5" heading="Programming Languages" >
+                <li *ngFor="let pr of programming_langauges" class="top-margin-2">{{pr}}</li>
+            </accordion-group>
+            <accordion-group class="top-margin-5" heading="Markup Languages" >
+                <li *ngFor="let mr of markup_languages" class="top-margin-2">{{mr}}</li>
+            </accordion-group>
+            <accordion-group class="top-margin-5" heading="Operating Systems Used" >
+                <li *ngFor="let os of operating_system" class="top-margin-2">{{os}}</li>
+            </accordion-group>
+            <accordion-group class="top-margin-5" heading="Known Databases" >
+                <li *ngFor="let db of known_databases" class="top-margin-2">{{db}}</li>
+            </accordion-group>
+            <accordion-group class="top-margin-5" heading="Frameworks" >
+                <li *ngFor="let fr of frameworks" class="top-margin-2">{{fr}}</li>
+            </accordion-group>
+            <accordion-group class="top-margin-5" heading="Content Management Systems" >
+                <li *ngFor="let cm of cms" class="top-margin-2">{{cm}}</li>
+            </accordion-group>
+        </accordion>
+    </div>
+</div>

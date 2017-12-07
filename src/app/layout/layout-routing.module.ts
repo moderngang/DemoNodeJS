@@ -14,6 +14,11 @@ const routes: Routes = [
             { path: 'grid', loadChildren: './grid/grid.module#GridModule' },
             { path: 'components', loadChildren: './bs-component/bs-component.module#BsComponentModule' },
             { path: 'personal-details', loadChildren: './personal-details/personal-details.module#PersonalDetailsModule' },
+            { path: 'qualifications', loadChildren: './qualifications/qualifications.module#QualificationsModule' },
+            { path: 'projects', loadChildren: './projects/projects.module#ProjectsModule' },
+            { path: 'skillsets', loadChildren: './skillsets/skillsets.module#SkillsetsModule' },
+            { path: 'extras', loadChildren: './extras/extras.module#ExtrasModule' },
+            { path: 'declaration', loadChildren: './declaration/declaration.module#DeclarationModule' },
             { path: 'blank-page', loadChildren: './blank-page/blank-page.module#BlankPageModule' },
         ]
     }

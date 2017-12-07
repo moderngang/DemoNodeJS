@@ -1,6 +1,6 @@
 <nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
     <ul class="list-group">
-        <a routerLink="/dashboard" [routerLinkActive]="['router-link-active']" class="list-group-item">
+        <!--<a routerLink="/dashboard" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="fa fa-fw fa-dashboard"></i>&nbsp;{{ 'Dashboard' | translate }}
         </a>
         <a [routerLink]="['/charts']" [routerLinkActive]="['router-link-active']" class="list-group-item">
@@ -17,11 +17,26 @@
         </a>
         <a [routerLink]="['/grid']" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="fa fa-fw fa-wrench"></i>&nbsp;{{ 'Boostrap Grid' | translate }}
-        </a>
+        </a>-->
         <a [routerLink]="['/personal-details']" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="fa fa-fw fa-user-o"></i>&nbsp;Personal Details
         </a>
-        <a [routerLink]="['/components']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+        <a [routerLink]="['/qualifications']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-graduation-cap"></i>&nbsp;Qualifications
+        </a>
+        <a [routerLink]="['/projects']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-cogs"></i>&nbsp;Projects
+        </a>
+        <a [routerLink]="['/skillsets']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-briefcase"></i>&nbsp;Skillsets
+        </a>
+        <a [routerLink]="['/extras']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-line-chart"></i>&nbsp;Extras
+        </a>
+        <a [routerLink]="['/declaration']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-pencil-square-o"></i>&nbsp;Declaration
+        </a>
+        <!--<a [routerLink]="['/components']" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="fa fa-th-list"></i>&nbsp;{{ 'Component' | translate }}
         </a>
         <div class="nested-menu">
@@ -47,6 +62,6 @@
         </a>
         <a class="list-group-item more-themes" href="http://www.strapui.com/" >
             {{ 'More Theme' | translate }}
-        </a>
+        </a>-->
     </ul>
 </nav>

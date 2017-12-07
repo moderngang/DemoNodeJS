@@ -1,0 +1,10 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'Projects'" [icon]="'fa-cogs'"></app-page-header>
+    <div>
+        <a class="btn btn-info" [routerLink]="['/projects/industrial']">Industrial</a>
+        <a class="btn btn-info left-margin" [routerLink]="['/projects/academic']">Academic</a>
+    </div>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</div>

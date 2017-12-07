@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../../router.animations';
+import { environment } from '../../../environments/environment';
 
 @Component({
     selector: 'app-form',
@@ -8,6 +9,6 @@ import { routerTransition } from '../../router.animations';
     animations: [routerTransition()]
 })
 export class FormComponent implements OnInit {
-    constructor() { }
+    constructor() {}
     ngOnInit() {}
 }

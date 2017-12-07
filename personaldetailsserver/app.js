@@ -8,6 +8,11 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var personal_details = require('./routes/personal_details');
+var qualifications = require('./routes/qualifications');
+var academic_projects = require('./routes/academic_projects');
+var industrial_projects = require('./routes/industrial_projects');
+var skillsets = require('./routes/skillsets');
+var mysql = require('mysql');
 
 var app = express();
 
@@ -44,10 +49,30 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+global.con = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "dashboard_app"
+});
+con.connect(function(err) {        
+    if (err) 
+    {
+        console.log("Fail to connect the database");
+        //exit(0);
+    }        
+    else  
+    {
+        console.log("Connected.");
+    }
+})
 app.use('/', index);
 app.use('/users', users);
 app.use('/personal-details', personal_details);
+app.use('/qualifications', qualifications);
+app.use('/academic_projects', academic_projects);
+app.use('/industrial_projects', industrial_projects);
+app.use('/skillsets', skillsets);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

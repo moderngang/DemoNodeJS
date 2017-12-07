@@ -1,0 +1,17 @@
+<div class="top-padding">
+    <accordion>
+        <accordion-group class="top-margin-5" heading={{project.name}} *ngFor="let project of academicProjects | paginate: { itemsPerPage: 1, currentPage: p } ">
+            <div class="row">
+                <span class="col-sm-2 bold">Platform</span>
+                <span class="col-sm-10">{{project.platform}}</span>
+            </div>
+            <div class="row top-buffer">
+                <span class="col-sm-2 bold">Description</span>
+                <span class="col-sm-10">{{project.description}}</span>
+            </div>
+        </accordion-group>
+    </accordion>
+    <div class="paging-top-margin">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+</div>

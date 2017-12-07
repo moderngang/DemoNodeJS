@@ -25,7 +25,7 @@ export class PersonalDetailsComponent implements OnInit {
          this._psersonalDetailsService.getPersonalDetails().subscribe( result => {
             if(result){
                 console.log(result);
-                this.personalDetails = result.Data;
+                this.personalDetails = result.data;
             }
          });
      }
