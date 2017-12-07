@@ -1,0 +1,15 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'Personal Details'" [icon]="'fa-user-o'"></app-page-header>
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>Name</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr *ngFor="let item of personalDetails">
+                <td>{{ item.Name }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
